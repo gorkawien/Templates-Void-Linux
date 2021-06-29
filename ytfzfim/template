@@ -1,0 +1,15 @@
+# Template file for 'ytfzfim'
+pkgname=ytfzfim
+version=1.1.8
+revision=1
+depends="mpv youtube-dl ueberzug jq fzf"
+short_desc="Posix script to find and watch youtube videos from the terminal"
+maintainer="AgarimOS <agarimOS@tutanota.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/ThatOneCalculator/ytfzfim"
+distfiles="https://github.com/ThatOneCalculator/ytfzfim/archive/refs/tags/v${version}.tar.gz"
+checksum=14ae2bdc3297ebe0a12ffc0470e81af8669d1091e372692f92764d6a4ed97fa9
+
+do_install() {
+	vbin ytfzf
+}
